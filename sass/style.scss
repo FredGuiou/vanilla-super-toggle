@@ -1,0 +1,15 @@
+@use './vars.scss';
+@use './mixins.scss';
+
+body {
+  background-color: vars.$color-00;
+  color: vars.$color-01;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}

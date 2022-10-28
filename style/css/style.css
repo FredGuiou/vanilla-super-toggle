@@ -1,0 +1,12 @@
+body {
+  background-color: #1c1922;
+  color: #fff;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
