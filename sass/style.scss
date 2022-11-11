@@ -1,5 +1,5 @@
-@use './vars.scss';
-@use './mixins.scss';
+@use "./vars.scss";
+@use "./mixins.scss";
 
 body {
   background-color: vars.$color-00;
@@ -12,4 +12,9 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.light {
+  background-color: vars.$color-01;
+  color: vars.$color-00;
 }

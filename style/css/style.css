@@ -9,4 +9,9 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.light {
+  background-color: #fff;
+  color: #1c1922;
 }/*# sourceMappingURL=style.css.map */

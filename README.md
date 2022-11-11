@@ -20,6 +20,18 @@ Tasks :
 
 This button will be used in other project in the future !
 
+Session 1 :
+
+- organize the files
+- Fred worked on test file
+
+Session 2 :
+
+- check methods already written
+- create the button
+- add event listener on the button
+- create a method that handle the light mode
+
 ---
 
 Author : Fred & Yumicode
