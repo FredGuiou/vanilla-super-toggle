@@ -18,3 +18,30 @@ a {
   background-color: vars.$color-01;
   color: vars.$color-00;
 }
+
+h1 {
+  margin: vars.$margin-00;
+  font-size: vars.$font-size-01;
+}
+
+.element {
+  padding: vars.$padding-01;
+}
+
+.button {
+  background-color: vars.$color-02;
+  padding: vars.$padding-00;
+  border-color: vars.$color-01;
+  border-width: 0.3em;
+  border-radius: 8px;
+  color: vars.$color-01;
+  font-weight: bold;
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+
+.button:hover {
+  background-color: vars.$color-01;
+  color: vars.$color-00;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}

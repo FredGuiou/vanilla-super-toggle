@@ -15,7 +15,7 @@ const app = {
     //Je crée mon objet dans le DOM.
     const toggleButton = document.createElement("button");
     // toggleButton.textContent = "Try Light Mode";
-    const buttonText = document.createTextNode("Toggle Light Mode");
+    const buttonText = document.createTextNode("Toggle display Mode");
     //J'applique une classe à mon objet.
     toggleButton.classList.add("button");
     //J'applique un texte sur le bouton.
