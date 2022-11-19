@@ -36,6 +36,9 @@ const app = {
     // this.body.classList.toggle("light"); 
     // => this ne va pas foncitonner ici car renvoie à l'élément le plus proche et est imbriqué dans la méthode toggleLightMode
     app.body.classList.toggle("light");
+    const toggleButton = document.querySelector("button");
+    toggleButton.classList.toggle("button");
+    toggleButton.classList.toggle("light-button");
   },
 };
 

@@ -28,6 +28,8 @@ h1 {
   padding: vars.$padding-01;
 }
 
+//~Button changes
+
 .button {
   background-color: vars.$color-02;
   padding: vars.$padding-00;
@@ -44,4 +46,22 @@ h1 {
   background-color: vars.$color-01;
   color: vars.$color-00;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.light-button {
+  background-color: vars.$color-02;
+  padding: vars.$padding-00;
+  border-color: vars.$color-00;
+  border-width: 0.3em;
+  border-radius: 8px;
+  color: vars.$color-00;
+  font-weight: bold;
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.light-button:hover {
+  background-color: vars.$color-00;
+  color: vars.$color-01;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0), 0 17px 50px 0 rgba(0, 0, 0, 0);
 }

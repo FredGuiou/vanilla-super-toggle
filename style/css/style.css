@@ -41,4 +41,22 @@ h1 {
   background-color: #fff;
   color: #1c1922;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.light-button {
+  background-color: rgba(255, 255, 255, 0);
+  padding: 1em;
+  border-color: #1c1922;
+  border-width: 0.3em;
+  border-radius: 8px;
+  color: #1c1922;
+  font-weight: bold;
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.light-button:hover {
+  background-color: #1c1922;
+  color: #fff;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0), 0 17px 50px 0 rgba(0, 0, 0, 0);
 }/*# sourceMappingURL=style.css.map */
