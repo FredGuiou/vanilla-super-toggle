@@ -15,7 +15,7 @@ const app = {
     //Je crée mon objet dans le DOM.
     const toggleButton = document.createElement("button");
     // toggleButton.textContent = "Try Light Mode";
-    const buttonText = document.createTextNode("Toggle display Mode");
+    const buttonText = document.createTextNode("Go to Light 🌞");
     //J'applique une classe à mon objet.
     toggleButton.classList.add("button");
     //J'applique un texte sur le bouton.
@@ -39,6 +39,13 @@ const app = {
     const toggleButton = document.querySelector("button");
     toggleButton.classList.toggle("button");
     toggleButton.classList.toggle("light-button");
+
+    //Je tranforme le texte de mon button
+    if(toggleButton.innerHTML === "Go to Light 🌞") {
+      toggleButton.innerHTML = "Go to Dark 🌜";
+    } else {
+      toggleButton.innerHTML = "Go to Light 🌞";
+    };
   },
 };
 
