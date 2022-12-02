@@ -1,4 +1,4 @@
-//Application qui génère des articles sur la page.
+//Générer des cartes sur la page.
 
 const cards = {
 
@@ -19,14 +19,19 @@ const cards = {
             .then(data => {
                 for( const card of data ) {
                     console.log (card);
-                    cards.createCards();
+                    cards.createCard(); // ici que les cartes vont être créé
                 };
             });
     },
 
-    createCards() {
+    createCard() {
         //Je génère mes cartes dans le DOM.
         console.log("Prochaine étape, générer les cartes dans le DOM !");
+
+        //Créer un élément principal parent card
+        //Je crée deux éléments enfants Title et content
+        //Je fais adopter mes éléments enfants par le parent card
+
     },
 };
 

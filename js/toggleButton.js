@@ -33,19 +33,30 @@ const app = {
 
   handleLightMode() {
     //je cible mon body auquel j'ajoute la classe light
-    // this.body.classList.toggle("light"); 
+    // this.body.classList.toggle("light");
     // => this ne va pas foncitonner ici car renvoie à l'élément le plus proche et est imbriqué dans la méthode toggleLightMode
-    app.body.classList.toggle("light");
     const toggleButton = document.querySelector("button");
-    toggleButton.classList.toggle("button");
+    app.body.classList.toggle("light");
+    // toggleButton.classList.toggle("button");
     toggleButton.classList.toggle("light-button");
 
+    //contains() sert à vérifier l'existence d'une classe et renvoie un booléen.
+    // toggleButton.classList.contains('light');
+    
+
     //Je tranforme le texte de mon button
-    if(toggleButton.innerHTML === "🌜 switch to 🌞") {
-      toggleButton.innerHTML = "🌞 switch to 🌜";
-    } else {
-      toggleButton.innerHTML = "🌜 switch to 🌞";
-    };
+    // if(toggleButton.innerHTML === "🌜 switch to 🌞") {
+    //   toggleButton.innerHTML = "🌞 switch to 🌜";
+    // } else {
+    //   toggleButton.innerHTML = "🌜 switch to 🌞";
+    // };
+
+    //Ternaire qui équivaut à la condition if else au dessus.
+    //textContent est plus sécurisé que innerHTML on préfère cette formulation.
+    toggleButton.textContent === "🌜 switch to 🌞"
+      ? (toggleButton.textContent = "🌞 switch to 🌜")
+      : (toggleButton.textContent = "🌜 switch to 🌞");
+    
   },
 };
 
