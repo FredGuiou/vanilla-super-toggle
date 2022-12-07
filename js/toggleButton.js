@@ -57,6 +57,21 @@ const app = {
       ? (toggleButton.textContent = "🌞 switch to 🌜")
       : (toggleButton.textContent = "🌜 switch to 🌞");
     
+
+    //Je transfosme l'état de mes cartes
+    //Je sélectionne tous les éléments ayant la classe card.
+    const card = document.querySelectorAll(".card");
+    //Cela me renvoit une liste des 3 éléments en console.
+    // console.log(card);
+    //Je boucle sur la NodeList et j'applique la classe "light-card" sur chaque.
+    // for( const item of card ) {
+    //   item.classList.toggle("light-card");
+    // };
+
+    //Test avec une boucle forEach
+    card.forEach(elements => {
+      elements.classList.toggle("light-card");
+    });
   },
 };
 

@@ -61,4 +61,46 @@ h1 {
   background-color: #1c1922;
   color: #fff;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0), 0 17px 50px 0 rgba(0, 0, 0, 0);
+}
+
+.cardList {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 15em;
+  height: 15em;
+  border-color: #fff;
+  background-color: #1c1922;
+  border: 0.3em solid;
+  border-radius: 8px;
+  padding: 1% 1% 1% 1%;
+  transition-duration: 0.2s;
+  box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+
+.card:hover {
+  transition-duration: 0.4s;
+  transform: translateY(160px) scale(1.55, 1.55);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0), 0 17px 50px 0 rgba(0, 0, 0, 0);
+}
+
+.light-card {
+  display: flex;
+  flex-direction: column;
+  width: 15em;
+  height: 15em;
+  border-color: #1c1922;
+  background-color: #fff;
+  border: 0.3em solid;
+  border-radius: 8px;
+  padding: 1% 1% 1% 1%;
+  transition-duration: 0.2s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }/*# sourceMappingURL=style.css.map */

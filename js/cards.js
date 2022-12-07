@@ -1,6 +1,11 @@
 //Générer des cartes sur la page.
 
 const cards = {
+     //J'appelle les variables existantes en HTML.
+    body: document.querySelector("body"),
+    h1: document.querySelector("h1"),
+    element: document.querySelector(".element"),
+    cardList: document.querySelector(".cardList"),
 
     init() {
         //J'initialise le lancement de l'app articles.
@@ -17,20 +22,35 @@ const cards = {
             })
             //Je boucle pour créer autant d'objets que d'ittérations dans le fichier.
             .then(data => {
-                for( const card of data ) {
-                    console.log (card);
-                    cards.createCard(); // ici que les cartes vont être créé
+                for( const cardData of data ) {
+                    // console.log (cardData);
+                    cards.createCard(cardData); // ici que les cartes vont être créé
                 };
             });
     },
 
-    createCard() {
-        //Je génère mes cartes dans le DOM.
-        console.log("Prochaine étape, générer les cartes dans le DOM !");
+    createCard(cardData) {
+        //Je génère mes cartes dans le DOM. 
+        //Pour cela je crée une div en HTML au préalable que je nomme cardList afin de séparer les éléments.
+        //Création de l'élément principal parent card
+        // console.log(cardData);
+        const cardModel = document.createElement("div");
+        cardModel.classList.add("card");
+        this.cardList.appendChild(cardModel);
 
-        //Créer un élément principal parent card
-        //Je crée deux éléments enfants Title et content
-        //Je fais adopter mes éléments enfants par le parent card
+        //Je crée deux éléments enfants title et content
+        const cardTitle = document.createElement("h2");
+        cardTitle.classList.add("card_title");
+        const cardTilteText = document.createTextNode(`${cardData.title}`);
+        cardTitle.appendChild(cardTilteText);
+
+        const cardContent = document.createElement("p");
+        cardContent.classList.add("card_content");
+        const cardContentText = document.createTextNode(`${cardData.content}`);
+        cardContent.appendChild(cardContentText);
+
+        cardModel.appendChild(cardTitle);
+        cardModel.appendChild(cardContent);
 
     },
 };
