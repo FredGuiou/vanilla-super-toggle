@@ -38,6 +38,17 @@ const cards = {
         cardModel.classList.add("card");
         this.cardList.appendChild(cardModel);
 
+        //Ces deux sections organisent les élements de façon homogène dans chaque cartes.
+
+        const cardSectionHeader = document.createElement("div");
+        cardSectionHeader.classList.add("card__section-Header");
+        cardModel.appendChild(cardSectionHeader);
+
+        const cardSectionMain = document.createElement("div");
+        cardSectionMain.classList.add("card__section-Main");
+        cardModel.appendChild(cardSectionMain);
+
+
         //Je crée deux éléments enfants title et content
         const cardTitle = document.createElement("h2");
         cardTitle.classList.add("card_title");
@@ -49,8 +60,18 @@ const cards = {
         const cardContentText = document.createTextNode(`${cardData.content}`);
         cardContent.appendChild(cardContentText);
 
-        cardModel.appendChild(cardTitle);
-        cardModel.appendChild(cardContent);
+        //Afin d'accéder à l'article via une fenêtre Modale je crée un élément lien.
+        const cardReadLink = document.createElement("a");
+        cardReadLink.classList.add("card__read-link");
+        cardReadLink.setAttribute("href", "");
+        const cardReadLinkText = document.createTextNode(`${cardData.readlink}`);
+        cardReadLink.appendChild(cardReadLinkText);
+
+        cardSectionHeader.appendChild(cardTitle);
+        cardSectionMain.appendChild(cardContent);
+        cardSectionMain.appendChild(cardReadLink);
+
+
 
     },
 };

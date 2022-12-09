@@ -1,4 +1,4 @@
-const app = {
+const toggle = {
   //J'appelle les variables existantes en HTML.
   body: document.querySelector("body"),
   h1: document.querySelector("h1"),
@@ -7,8 +7,8 @@ const app = {
   init() {
     //J'initialise le lancement de mon app.
     console.log("Welcome inside Super Toggle Light Mode 🔌");
-    app.createToggleButton();
-    app.toggleLightMode();
+    toggle.createToggleButton();
+    toggle.toggleLightMode();
   },
 
   createToggleButton() {
@@ -36,7 +36,7 @@ const app = {
     // this.body.classList.toggle("light");
     // => this ne va pas foncitonner ici car renvoie à l'élément le plus proche et est imbriqué dans la méthode toggleLightMode
     const toggleButton = document.querySelector("button");
-    app.body.classList.toggle("light");
+    toggle.body.classList.toggle("light");
     // toggleButton.classList.toggle("button");
     toggleButton.classList.toggle("light-button");
 
@@ -75,4 +75,4 @@ const app = {
   },
 };
 
-app.init();
+toggle.init();

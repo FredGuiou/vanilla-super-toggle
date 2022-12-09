@@ -2,16 +2,31 @@
     {
         "id": 1,
         "title": "Story teller, O'clock and me ! 🚀",
-        "content": "This is the story of a guy who decided one day to change is life."
+        "content": "This is the story of a guy who decided one day to change is life.",
+        "readlink": "<Read More...>"
     },
     {
         "id": 2,
         "title": "The after, Why not preparing the graduate of Web and mobile developper ? ✅",
-        "content": "My journey during two months on the preparation for the Web and Mobile développer graduate."
+        "content": "My journey during two months on the preparation for the Web and Mobile développer graduate.",
+        "readlink": "<Read More...>"
     },
     {
         "id": 3,
         "title": "Hall or Hell of work ? 💥",
-        "content": "The reality on the market for Junior Web Developpers."
+        "content": "The reality on the market for Junior Web Developpers.",
+        "readlink": "<Read More...>"
+    },
+    {
+        "id": 4,
+        "title": "Why not try work-study training? 👨🏽‍💻",
+        "content": "Some alternative ways to integrate the professional world of development. ",
+        "readlink": "<Read More...>"
+    },
+    {
+        "id": 5,
+        "title": "And Next ? 😏",
+        "content": "Take a cofee and keep calm wainting PG results...",
+        "readlink": "<Read More...>"
     }
 ]
