@@ -15,7 +15,7 @@ const cards = {
 
     getData() {
         //Je récupère mes données depuis le fichier data.json
-        fetch("../data/data.json")
+        fetch("../data/cards.json")
         //Je convertis la réponse au format json
         .then(response => {
             return response.json();
@@ -34,7 +34,7 @@ const cards = {
         //Pour cela je crée une div en HTML au préalable que je nomme cardList afin de séparer les éléments.
         //Création de l'élément principal parent card
         // console.log(cardData);
-        const cardModel = document.createElement("div");
+        const cardModel = document.createElement("li");
         cardModel.classList.add("card");
         this.cardList.appendChild(cardModel);
 
