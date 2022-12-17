@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "link": "Home",
+        "url": "../index.html"
+    },
+    {
+        "id": 2,
+        "link": "Dev'stories",
+        "url": "../html/stories.html"
+    },
+    {
+        "id": 3,
+        "link": "Tech'tips",
+        "url": "../html/tips.html"
+    }
+]

@@ -4,17 +4,16 @@ const cards = {
      //J'appelle les variables existantes en HTML.
     body: document.querySelector("body"),
     h1: document.querySelector("h1"),
-    element: document.querySelector(".element"),
     cardList: document.querySelector(".cardList"),
 
     init() {
-        //J'initialise le lancement de l'app articles.
+        //J'initialise le lancement de l'app cards.
         console.log('Cards are connected ✅');
         cards.getData();
     },
 
     getData() {
-        //Je récupère mes données depuis le fichier data.json
+        //Je récupère mes données depuis le fichier cards.json
         fetch("../data/cards.json")
         //Je convertis la réponse au format json
         .then(response => {

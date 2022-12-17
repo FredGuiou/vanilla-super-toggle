@@ -2,7 +2,7 @@ const toggle = {
   //J'appelle les variables existantes en HTML.
   body: document.querySelector("body"),
   h1: document.querySelector("h1"),
-  element: document.querySelector(".element"),
+  navbar: document.querySelector(".navbar"),
 
   init() {
     //J'initialise le lancement de mon app.
@@ -21,7 +21,7 @@ const toggle = {
     //J'applique un texte sur le bouton.
     toggleButton.appendChild(buttonText);
     //J'insère le bouton "button" à son élément parent "element".
-    this.element.appendChild(toggleButton);
+    this.navbar.appendChild(toggleButton);
   },
 
   toggleLightMode() {
@@ -71,6 +71,12 @@ const toggle = {
     //Test avec une boucle forEach
     card.forEach(elements => {
       elements.classList.toggle("light-card");
+    });
+
+    //Je change l'état de ma/mes homeCard(s)
+    const homeCard = document.querySelectorAll(".homeCard");
+    homeCard.forEach(elements => {
+      elements.classList.toggle("light-homeCard");
     });
   },
 };

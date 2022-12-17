@@ -4,19 +4,34 @@
 $color-00: #1c1922;
 $color-01: #fff;
 $color-02: #fff0;
-$color-03: rgb(47, 88, 221);
+$color-03: rgb(57, 109, 98);
 
 //~Padding
-$padding-00: 1em;
-$padding-01: 2em;
+$padding-00: 1rem;
+$padding-01: 2rem;
 
 //~Margin
-$margin-00: 1em;
+$margin-00: 1rem;
+$margin-01: 3.5rem;
 
 //~Font-size
-$font-size-00: 1em;
-$font-size-01: 2em;
+$font-size-00: 1rem;
+$font-size-01: 2rem;
+$font-size-02: 4rem;
+$font-size-03: 8rem;
 
 //~Cards-size
-$cards-width: 18em;
-$cards-height: 18em;
+$cards-width: 18rem;
+$cards-height: 18rem;
+
+//~HomeCard-size
+$homeCard-width: 85rem;
+$homeCard-height: 43rem;
+
+//~Transition-duration
+$duration-00: 0.4s;
+$duration-01: 0.2s;
+
+//~Toggle-Button
+$TB-width: 9rem;
+$TB-height: 2rem;

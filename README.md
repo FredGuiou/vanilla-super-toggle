@@ -32,6 +32,24 @@ Session 2 :
 - add event listener on the button
 - create a method that handle the light mode
 
+Session 3 :
+
+- create a .json file with datas
+- create cards in JS Vanilla to generate them in DOM
+- CSS on cards to organize them.
+
+Session 4 :
+
+- Create a navbar with links from a json
+- CSS on H1 and navbar banner
+
+Next Session :
+
+- Create Mixins to CSS
+- Create Pages and architecture (Folder)
+- Activation on Navbar links
+- Modale with template
+
 ---
 
 Author : Fred & Yumicode
