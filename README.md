@@ -22,33 +22,34 @@ This button will be used in other project in the future !
 
 Session 1 :
 
-- organize the files
-- Fred worked on test file
+- organize the files ✅
+- Fred worked on test file✅
 
 Session 2 :
 
-- check methods already written
-- create the button
-- add event listener on the button
-- create a method that handle the light mode
+- check methods already written✅
+- create the button✅
+- add event listener on the button✅
+- create a method that handle the light mode✅
 
 Session 3 :
 
-- create a .json file with datas
-- create cards in JS Vanilla to generate them in DOM
-- CSS on cards to organize them.
+- create a .json file with datas✅
+- create cards in JS Vanilla to generate them in DOM✅
+- CSS on cards to organize them.✅
 
 Session 4 :
 
-- Create a navbar with links from a json
-- CSS on H1 and navbar banner
+- Create a navbar with links from a json✅
+- CSS on H1 and navbar banner✅
 
 Next Session :
 
 - Create Mixins to CSS
-- Create Pages and architecture (Folder)
-- Activation on Navbar links
+- Create Pages and architecture (Folder)✅
+- Activation on Navbar links✅
 - Modale with template
+- localstorage for saving light/darkmode
 
 ---
 

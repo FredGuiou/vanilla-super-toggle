@@ -1,9 +1,12 @@
 [
     {
         "id": 1,
-        "content": "Welcome on board ! Here is a page to explain user what's this application",
-        "Picture": "",
-        "IG_URL": "",
-        "LI_URL": ""
+        "content": "Welcome on board ! Here is a page to explain user what this application is 😎",
+        "picture": "../style/pictures/welcome_picture.webp",
+        "alt": "Web site author profile pic",
+        "presentation": "Here I am ! My name is Fred and this my blog ! 👨🏻‍💻",
+        "welcome": "Welcome on board Dev' ! In the section Dev'Stories you will find my chronological experience to become a web developper, in Tech'Tips some little help for the beginners.",
+        "IG_URL": "https://www.instagram.com/thedevmot/",
+        "LI_URL": "https://www.linkedin.com/in/fredericguiou/"
     }
 ]

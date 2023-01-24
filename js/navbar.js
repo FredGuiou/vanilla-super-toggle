@@ -31,6 +31,7 @@ const navbar = {
     createNavlinks(navData) {
         // console.log(navData);
         //Je génère mes liens dans le DOM.
+        
         const linkModel = document.createElement('a');
         linkModel.classList.add("link");
         this.navbar.appendChild(linkModel);

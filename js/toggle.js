@@ -3,13 +3,25 @@ const toggle = {
   body: document.querySelector("body"),
   h1: document.querySelector("h1"),
   navbar: document.querySelector(".navbar"),
-
+  
   init() {
     //J'initialise le lancement de mon app.
     console.log("Welcome inside Super Toggle Light Mode 🔌");
+    // toggle.checkDisplayMode();
     toggle.createToggleButton();
     toggle.toggleLightMode();
   },
+
+  // checkDisplayMode(){
+    //Je vérifie si le lightMode est actif depuis la précédente session.
+    // if (localStorage.getItem("lightMode") === "true") {
+    //   this.handleLightMode();
+    //   window.addEventListener("load", function() {
+    //     if (localStorage.getItem("darkMode") === "true") {
+    //         toggle.handleLightMode();
+    //     }
+    // });
+  // },
 
   createToggleButton() {
     //Je crée mon objet dans le DOM.
@@ -78,6 +90,14 @@ const toggle = {
     homeCard.forEach(elements => {
       elements.classList.toggle("light-homeCard");
     });
+
+    const navlink = document.querySelectorAll(".link");
+    navlink.forEach(elements => {
+      elements.classList.toggle("light-link");
+    });
+
+    //Je stocke le paramètre en localstorage.
+    // localStorage.setItem("lightMode", this.body.classList.contains("dark"));
   },
 };
 
